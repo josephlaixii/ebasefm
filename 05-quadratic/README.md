@@ -1,5 +1,7 @@
 # Quadratic Equation
 
+## Instructions
+
 Implement the function `findRoots` to find the roots of the quadratic equation: `ax2 + bx + c = 0`. The function should return an array containing both roots in any order. If the equation has only one solution, the function should return that solution as both elements of the array. The equation will always have at least one solution.
 
 The roots of the quadratic equation can be found with the following formula:

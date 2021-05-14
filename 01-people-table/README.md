@@ -1,4 +1,4 @@
-# eBASE Developer Application Test
+# People table
 
 ## Instructions
 

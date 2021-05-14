@@ -1,5 +1,7 @@
 # Pipeline
 
+## Instructions
+
 As part of a data processing pipeline, complete the implementation of the `make_pipeline` method:
 
 - The method should accept a variable number of functions, and it should return a new function that accepts one parameter `$arg`.

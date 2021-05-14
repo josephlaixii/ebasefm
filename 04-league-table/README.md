@@ -1,5 +1,7 @@
 # League Table
 
+## Instructions
+
 The `LeagueTable` class tracks the score of each player in a league. After each game, the player records their score with the `recordResult` function. 
 
 The player's rank in the league is calculated using the following logic:
