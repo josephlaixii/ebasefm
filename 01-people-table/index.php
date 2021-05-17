@@ -38,7 +38,6 @@ $age =  [
 	['id' => 4, 'first_name' => 'Steve', 'last_name' => 'Buscemi', 'email' => 'steve.buscemi@yahoo.com'],
 	['id' => 5, 'first_name' => 'Doug', 'last_name' => 'Simons', 'email' => 'doug.simons@hotmail.com'],
 ];
-echo $age[0]
 ?>
 
 <?php foreach($age as $element) { ?>
