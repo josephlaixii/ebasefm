@@ -5,6 +5,7 @@ class Interview
 	public $title = 'Interview test';
 }
 
+// Should use a better naming convention
 $lipsum = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus incidunt, quasi aliquid, quod officia commodi magni eum? Provident, sed necessitatibus perferendis nisi illum quos, incidunt sit tempora quasi, pariatur natus.';
 
 $people = [
@@ -14,7 +15,7 @@ $people = [
 	['id' => 4, 'first_name' => 'Steve', 'last_name' => 'Buscemi', 'email' => 'steve.buscemi@yahoo.com'],
 	['id' => 5, 'first_name' => 'Doug', 'last_name' => 'Simons', 'email' => 'doug.simons@hotmail.com'],
 ];
-
+// Posting doesnt seem to be right
 $person = $_POST['person'];
 
 ?>
@@ -36,14 +37,16 @@ $person = $_POST['person'];
 
 	<h1><?= Interview::$title; ?></h1>
 
-	<!-- This whole printing code need to be fix since the condition is wrong -->
+	<!-- should add the html code outside fo the php -->
+	<!-- Need to change the condition of the for loop $i-- -->
 	<?php
 	// Print 10 times
-	for ($i = 10; $i > 1; $i--) {?>
-		<p><?= $lipsum ?><p>
-	<?php}?>
+	for ($i = 10; $i < 0; $i++) {
+		echo '<p>' + $lipsum + '</p>';
+	}
+	?>
 
-
+	<!-- remove random hr tag -->
 	<hr>
 
 
@@ -54,6 +57,7 @@ $person = $_POST['person'];
 		<p><input type="submit" value="Submit" /></p>
 	</form>
 
+	<!-- is is_null($person) to check of the array is empty -->
 	<?php if ($person) : ?>
 		<p><strong>Person</strong> <?= $person['first_name']; ?>, <?= $person['last_name']; ?>, <?= $person['email']; ?></p>
 	<?php endif; ?>
