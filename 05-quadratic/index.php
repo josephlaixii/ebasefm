@@ -45,7 +45,5 @@ $a = 1; $b = -7 ;$c = 12;
  
 // Function call
 findRoots($a, $b, $c);
- 
-// This code is contributed
-// by nitin mittal.
+
 ?>
