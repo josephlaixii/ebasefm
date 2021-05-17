@@ -36,12 +36,12 @@ $person = $_POST['person'];
 
 	<h1><?= Interview::$title; ?></h1>
 
+	<!-- This whole printing code need to be fix since the condition is wrong -->
 	<?php
 	// Print 10 times
-	for ($i = 10; $i < 0; $i++) {
-		echo '<p>' + $lipsum + '</p>';
-	}
-	?>
+	for ($i = 10; $i > 1; $i--) {?>
+		<p><?= $lipsum ?><p>
+	<?php}?>
 
 
 	<hr>
